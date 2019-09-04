@@ -1,5 +1,6 @@
 # Hacked-Text
 A simple javascript library for showing text like a 90' hacker film
+![](hacked-text.gif)
 
 ## How to use
 Import the library and use the Init(ID_OF_TEXT_DOM, ITERATIONS, SPEED) where:
@@ -29,7 +30,6 @@ example:
 ...
 
 ```
-![](hacked-text.gif)
 
 Live example:
 https://lukeiszed.github.io/hacked-text/index.html
