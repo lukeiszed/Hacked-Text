@@ -29,7 +29,7 @@ example:
 ...
 
 ```
-![](gif/hacked-text.gif)
+![](hacked-text.gif)
 
 Live example:
 https://lukeiszed.github.io/hacked-text/index.html
