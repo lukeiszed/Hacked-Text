@@ -30,6 +30,9 @@ example:
 
 ```
 
+Live example:
+https://lukeiszed.github.io/hacked-text/index.html
+
 Hack the planet!
 
 Created by:
