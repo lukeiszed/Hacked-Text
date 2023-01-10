@@ -7,10 +7,19 @@ let text;
 let _iterations = 5;
 let _speed = 10;
 
-
+/**
+ * 
+ * @param {The ID of the dom element} id 
+ * @param {Number of iterations} iterations 
+ * @param {Speed of the interations} speed 
+ */
 function Init(id, iterations, speed) {
     _iterations = iterations;
     _speed = speed;
+    decodedText = "";
+    splitText = [];
+    finalText = [];
+    indexes = [];
     text = document.getElementById(id).innerText;
     DecodeText();
 }

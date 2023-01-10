@@ -17,6 +17,7 @@
             align-items: center;
             background: black;
         }
+
         #text {
             font-size: 40px;
             color: limegreen;
@@ -24,15 +25,56 @@
             text-align: center;
             font-family: monospace;
         }
+
+        .controls {
+            top: 0;
+            width: 100%;
+            height: 6%;
+            position: absolute;
+            color: white;
+            border-bottom: 1px solid white;
+            text-align: center;
+        }
+
+        input {
+            margin: 0 5px 0 5px;
+        }
+
+        #phrase {
+            min-width: 280px;
+        }
     </style>
 </head>
 
 <body>
+    <div class="controls">
+        <label for="iter-btn">Iterations:</label>
+        <input type="number" id="iter-btn" value="5">
+        <label for="speed-btn">Speed:</label>
+        <input type="number" id="speed-btn" value="10">
+        <label for="phrase">Text:</label>
+        <input type="text" name="" id="phrase" value="Mess with the best, die like the rest">
+        <button onClick="InitNew()">Change</button>
+    </div>
     <div id="text">
-            Mess with the best, die like the rest
+        Mess with the best, die like the rest
     </div>
 
-    <script>Init("text", 5, 10)</script>
+
+
+    <script>
+        Init("text", 5, 10);
+
+        function InitNew() {
+            let iter = document.getElementById("iter-btn").value;
+            let speed = document.getElementById("speed-btn").value;
+            let tt = document.getElementById("phrase").value;
+            document.getElementById("text").innerText = tt;
+            Init("text", iter, speed);
+        }
+    </script>
+
+
 </body>
 
 </html>
